@@ -744,7 +744,7 @@ footer {
   }
 }
 .nomura__signup .nomura__signup--all .nomura__sign.up__form {
-  margin: 0 auto;
+  margin: 20px auto;
   width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
