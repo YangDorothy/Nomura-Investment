@@ -1,0 +1,896 @@
+@color-red:#d70029;
+@color-grey:#efefef;
+@color-blue:#45748B;
+@color-light-blue:#94D3DD;
+@clior-wire:#231815;
+@content:1700px;
+
+header{
+    display: flex;
+    margin: 0 auto;
+    justify-content:center;
+    width: 100%;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    height: 100px;
+    .atSmaill({
+        justify-content:space-between;
+        .nav__mobile{
+            display: flex;
+            align-items: center;
+            width: auto;
+            padding: 0 30px;
+        }
+            .nav__mobile__icon{
+                height: 30px;
+                width: 30px;
+                align-items: center;
+                display: flex;
+                .nav__mobile__icon__middline{
+                    background-color: @color-red;
+                    align-items: center;
+                    transition: all 0.3s;
+                    height: 2px;
+                    width: 100%;
+                    z-index: 50;
+                    display: block;
+                    &::after{
+                        background-color: @color-red;
+                        align-items: center;
+                        transition: all 0.3s;
+                        height: 2px;
+                        width: 100%;
+                        bottom: -20px;
+                        content: '';
+                        display: block;
+                        margin: 32px 0 0 0;
+                        transition: all 0.2s ease-in-out;
+                    }
+                    &::before{
+                        background-color: @color-red;
+                        align-items: center;
+                        transition: all 0.3s;
+                        height: 2px;
+                        width: 100%;
+                        bottom: -26px;
+                        content: '';
+                        display: block;
+                        margin: -11px 0;
+                        transition: all 0.2s ease-in-out;
+                    }
+                    &.active{
+                        background-color: #fff;
+                        &::after{
+                            transform:translateY(-11px)rotate(45deg);
+                        }
+                        &::before{
+                            transform:translateY(12px)rotate(-45deg);
+                        }
+                    }
+                }   
+            }
+        });
+    nav{
+        display: flex;
+        .atSmaill({
+            display: none;
+            &.nav--active{
+                background-color: #fff;
+                position:absolute;
+                margin: 0 auto;
+                width: 100vw;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                top:100px;
+                right:0px;
+                height: 100vh;
+                text-align: center;
+            }
+        });
+
+     ul{
+        display: flex;
+        vertical-align: top;
+        padding-inline-start: 0px;
+        .atSmaill({
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-inline-start: 0px;
+    });
+
+        li{
+            padding: 0 0px;
+            list-style: none;
+            line-height: 50px;
+            padding: 30px;
+            .atSmaill({
+                margin: 20 40px;
+            });
+            a{
+                color: @color-red;
+                text-decoration: none;
+                font-size: 1.15rem;
+                height: 40px;
+                display: inline-block;
+                &:hover{
+                    border-bottom: @color-blue 5px solid;
+                }
+            }
+        }
+    }
+    }
+}
+.nav__mobile__icon__clos{
+    display: none;
+    .atSmaill({
+        display: none;
+         a{
+            color: @color-red;
+            text-decoration: none;
+        }
+    });
+}
+
+.line img{
+    width: 50px;
+}
+.fb img{
+    width: 50px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
+.fb{
+    margin: 15px;
+    .atSmaill({
+        background-color: #fff;
+        position:relative;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    });
+}
+.line{
+    .atSmaill({
+        background-color: #fff;
+        position:fixed;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        top:650px;
+        text-align: center;
+    });
+}
+footer{
+    text-align: center;
+    background-color: @color-red;
+    color: #fff;
+    padding: 2%;
+    line-height: 5px;
+    font-size: 1rem;
+    .atSmaill({
+        line-height: 20px;
+        padding: 5%;
+        font-size: 0.9rem;
+});
+}
+.nomura__illustrate{
+    background-color: @color-grey;
+    text-align: center;
+    color: #5e6766;
+    line-height: 28px;
+    padding: 4% 12%;
+    font-size: 1rem;
+}
+.Nomura--red{
+    color: @color-red;
+}
+.Nomura--red1{
+    color: @color-red;
+    line-height: 35px;
+    font-size: 1.3rem;
+}
+.nomura__banner__head{
+        width: 100%;
+        background-repeat: no-repeat;
+        background-image: url(image/title.png),url(image/head.jpg);
+        background-size: 100% 100%;
+        background-position: -200px top center center;
+        position: relative;
+        height: 0px;
+        padding-bottom: 60%;
+        .atSmaill({
+            width: 100%;
+            background-image: url(image/title-media.png),url(image/head-media.jpg);
+            padding-bottom: 140%;;
+        });
+}
+.botton{
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 27%;
+    z-index: 10;
+    width: 35px;
+    height: 184px;
+    right: 80px;
+    display: block;
+    display: none;
+    .atSmaill({
+        right: 30px;
+        &.botton--none{
+            display: none;
+        }
+        img{
+            width: 120%;
+            bottom: 25%;
+        }
+
+    });
+}
+.sec{
+    padding: 120px 0 0 0;
+}
+//---關於---
+.nomura__about{
+    .nomura__about--square{
+        text-align: center;
+        background-color: @color-red;
+        width: 200px;
+        margin: 0 auto;
+        height: 90px;
+        transform: skewX(-10deg);
+        box-shadow: 2px 4px 10px 2px rgb(119, 118, 118);
+    }
+    .nomura__about--title{
+        background-image: url(image/about.jpg);
+        background-repeat: no-repeat;
+        height: 650px;
+            h2{
+                text-align: center;
+                color: #fff;
+                font-size: 2.5rem;
+                line-height: 85px;
+                position: relative;
+                margin-top: -88px;
+                margin-bottom: 80px;
+
+        }
+            p{
+                text-align: center;
+                background-repeat: no-repeat;
+                color: #45748B;
+                line-height: 45px;
+                font-size: 1.7rem;
+                .atSmaill({
+                    font-size: 1.5rem;
+                });
+            }
+    }
+}
+//---主持人---
+.nomura__host{
+    padding: 110px 0;
+    background-image: url(image/host-bg.jpg);
+    height: 800px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    .atSmaill({
+        height: 2100px;
+        padding:110px 0;
+    });
+    .nomura__host--people{
+        display: flex;
+        justify-content: center;
+        margin: 60px auto;
+        width: 80%;
+        flex-wrap: wrap;
+
+        .nomura__host--people1,.nomura__host--people2,.nomura__host--people3{
+            margin:0 auto;
+            a{
+                text-decoration: none;
+                img{
+                    width: 350px;
+                &:first-child{
+                    box-shadow: 2px 2px 11px 2px rgb(161, 160, 160);
+                }
+            }
+            }
+            .nomura__host--people1--square,.nomura__host--people2--square{
+                text-align: center;
+                background-color: @color-red;
+                width: 220px;
+                margin: 0 auto;
+                height: 71.5px;
+                transform: skewX(-10deg);
+                position: relative;
+                margin-top: -75px;
+            }
+            .nomura__host--people3--square{
+                text-align: center;
+                background-color: @color-red;
+                width: 250px;
+                margin: 0 auto;
+                height: 71px;
+                transform: skewX(-10deg);
+                position: relative;
+                margin-top: -75px;
+            }
+            .nomura__host--people1--host,.nomura__host--people2--host{
+                position: relative;
+                text-align: left;
+                line-height: 25px;
+                margin: -22% 25%;
+                color: #fff;
+                img{
+                    position: relative;
+                    width: 12%;
+                    margin-left: 85%;
+                    top: -30px;
+                }   
+            }
+            .nomura__host--people3--host{
+                position: relative;
+                text-align: left;
+                line-height: 25px;
+                margin: -22% 21%;
+                color: #fff;
+                width: 220px;
+                img{
+                    position: relative;
+                    width: 10%;
+                    margin-left: 85%;
+                    top: -30px;
+                }   
+            }
+            .nomura__host--menu1{
+                background-color: @color-light-blue;
+                margin: 45px 0;
+                width: 351px;
+                height: 140px;
+                text-decoration: none;
+                line-height: 30px;
+                font-size: 1.1rem;
+                    ul{
+                        padding-inline-start: 20px;                   
+                        li{
+                            color: @color-blue;
+                        }
+                    }
+            }
+            .Nomura__host--menu2{
+                background-color: @color-light-blue;
+                margin: 45px 0;
+                width: 351px;
+                height: 140px;
+                text-decoration: none;
+                line-height: 30px;
+                font-size: 1.1rem;
+                    ul{
+                        padding-inline-start: 20px;                   
+                        li{
+                            color: @color-blue;
+                        }
+                    }
+            }
+            .nomura__host--menu3{
+                background-color: @color-light-blue;
+                margin: 45px 0;
+                width: 351px;
+                height: 160px;
+                text-decoration: none;
+                line-height: 30px;
+                font-size: 1.1rem;
+                    ul{
+                        padding-inline-start: 20px;                 
+                        li{
+                            color: @color-blue;
+                        }
+                    }
+            }
+            .name{
+                font-size: 1.3rem;
+            }
+            .nomura__host--menu{
+                width: 350px;
+            }
+        }
+    }
+    .nomura__host--square{
+        text-align: center;
+        background-color: @color-red;
+        width: 260px;
+        margin: 0px auto;
+        height: 90px;
+        transform: skewX(-10deg);
+        position: relative;
+        top:20px;
+        box-shadow: 2px 4px 10px 2px rgb(119, 118, 118);
+        
+    }
+        .nomura__host--title{
+                h2{
+                    text-align: center;
+                    color: #fff;
+                    font-size: 2.5rem;
+                    line-height: 85px;
+                    position: relative;
+                    margin-top: -65px;
+            }    
+    }
+}
+//---論壇議程---
+.nomura__agenda {
+    background-image: url(image/time.jpg);
+    height: 1200px;
+    display: flex;
+    padding: 100 0px;
+    background-repeat: no-repeat;   
+    .atSmaill({
+        height: 1230px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    });
+    .nomura__agenda--white{
+        background-color: #fff;
+        margin: 0 auto;
+        width: 80%;
+        height: 1100px;
+        align-items: center;
+        .atSmaill({
+            height: 1300px;
+        });
+        .nomura__agenda--time,.nomura__agenda--agenda,.nomura__agenda--host{
+            text-align: center;
+            width: 315px;
+        }
+        .nomura__agenda--time--all{
+            padding: 0 100px;
+            .atSmaill({
+                padding: 0 40px;
+            });    
+        }
+        .nomura__agenda--time2{
+            display: flex;
+            width: 600px;
+            margin: 80px auto 0;
+            .atSmaill({
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+            });
+            img{
+                width: 40%;
+                height: 27%;
+                .atSmaill({
+                    width: 70%;
+                    margin: 0 auto;
+                });
+            }
+            p{
+                font-size: 2.5rem;
+                margin: 0  40 0px;
+                color: @color-blue;
+                .atSmaill({
+                    width: 100%;
+                    text-align: center;
+                    margin: 30px  auto;
+                    font-size: 1.8rem;
+                });
+            }
+        }
+    }
+    .nomura__agenda--square{
+        text-align: center;
+        background-color: @color-red;
+        width: 260px;
+        margin: 0px auto;
+        height: 90px;
+        transform: skewX(-10deg);
+        position: relative;
+        top:80px;
+        box-shadow: 2px 4px 10px 2px rgb(119, 118, 118);
+    }
+        h2{
+            text-align: center;
+            color: #fff;
+            font-size: 2.5rem;
+            line-height: 85px;
+            position: relative;
+            margin-top: -5px;
+        }
+    }
+.nomura__agenda__wire,.nomura__agenda__wire--title {
+    display: flex;
+    text-align: center;
+    border-top: @clior-wire 1px double;
+    margin: 0 auto;
+    line-height: 25px;
+    font-size: 1.2rem;
+    padding: 25px;
+    flex-wrap: wrap;
+    .atSmaill({
+        padding: 23px;
+
+    });
+    &:first-child{
+        border-top: none;
+    }
+    li{
+        list-style: none;
+        color: @color-blue;
+
+    }
+}
+.nomura__agenda--title--middline{
+    display: none;
+}
+.nomura__agenda__wire--title{ 
+    .atSmaill({
+        .nomura__agenda--title{
+            display: none
+        }
+        .nomura__agenda--title--middline{
+            display: block;
+            font-size: 1.3rem;
+            margin: 0 auto;
+        }
+    });
+}
+.nomura__agenda__wire--title{
+    font-size: 2rem;
+    width: 100%;
+    .atSmaill({
+        width: 80%;
+    });
+    
+    .nomura__agenda--title{
+        text-align: center;
+        width: 315px;
+    }
+}
+//---立即報名---
+.nomura__signup{
+    background-color: @color-light-blue;
+    height: 1650px;
+    .atSmaill({
+        height: 1700px;  
+}); 
+    .nomura__signup--all{
+        background-color: @color-grey;
+        width: 80%;
+        margin: 0 auto;
+        height: 1500px;
+        .atSmaill({
+                 width: 100%;  
+                 height: 1650px; 
+        });  
+        .nomura__sign.up__form{
+            margin: 0 auto;
+            width: 65%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .atSmaill({
+                width: 90%;   
+       });     
+            input{ 
+                width: 80%;
+                margin: 20 auto;
+                height: 40px;
+                border-radius: 5px;
+                outline: none;
+                border: 0px; 
+                .atSmaill({
+                    width: 68%;
+                    });           
+            }
+        }
+        .nomura__sign.up--checkbox,.nomura__sign.up--submit{
+            margin: 0 25%;
+            width: 53%;
+            display: block;
+            color: @color-blue;
+            .atSmaill({
+                margin: 0 5%;
+                width: 90%;
+                }); 
+        }
+        .nomura__sign.up--checkbox{
+            font-size: 1.1rem;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .nomura__sign.up__form,.nomura__sign.up--checkbox,.nomura__Sign.up__form1{
+            textarea{
+                width: 80%;
+                margin: 20 auto;
+                height: 200px;
+                border-radius: 5px;
+                outline: none; 
+                border: 0px;
+                outline: none;
+                .atSmaill({
+                    width: 68%;
+                    }); 
+            }
+            label{
+                color: @color-blue;
+                text-align: left;
+                display: flex;
+                width: 100px; 
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .nomura__signup--square{
+        text-align: center;
+        background-color: @color-red;
+        width: 260px;
+        margin: 0px auto;
+        height: 90px;
+        transform: skewX(-10deg);
+        position: relative;
+        top:50px;
+        box-shadow: 2px 4px 10px 2px rgb(119, 118, 118);
+    }
+    h2{
+        text-align: center;
+        color: #fff;
+        font-size: 2.5rem;
+        line-height: 200px;
+        position: relative;
+        margin-top: -100px;
+    }
+    .nomura__sign.up--submit{
+        padding: 0 10px 40px;
+        input{
+        margin-left: 42%;
+        padding: 10px;
+        color: #fff;
+        background-color: @color-red;
+        border-radius: 5px;
+        box-shadow: none;
+        outline: none;
+        border: 0px;
+        padding: 15px;
+        .atSmaill({
+            margin-left: 35%;
+            font-size: 1rem
+            }); 
+        }
+    }
+    .nomura__sign.up--footer {
+        background-color: #99A8A7;
+        width: 53%;
+        margin: 0 auto;
+        color: #fff;
+        padding: 10 150px;
+        line-height: 25px;
+        .atSmaill({
+            padding: 10 5px;
+            width: 100%;
+            margin-left: -10px
+            }); 
+        ul{
+            list-style: none;
+        }
+        .nomura__sign.up--footer--text2{
+            padding: 0 1rem ;
+            .atSmaill({
+                margin-left: -10px
+                });
+        }
+        .nomura__sign.up--footer--text1{
+            font-size: 1.2rem;
+            .atSmaill({
+                margin-left: -10px
+                });
+        }
+    }
+}
+.nomura__Sign.up__form1{
+    margin: 0 auto;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    .atSmaill({     
+            width: 90%;
+    });
+    label{
+        padding: 30px 0 0 0;
+        .atSmaill({     
+            padding: 5 0 0 0;
+    });
+    }
+}
+.atSmaill({
+    .up__form--text label{       
+        margin-top: 25px;
+        display: flex;
+    }
+});
+//---影片專區---
+.nomura__media{
+    background-image: url(image/media.jpg);
+    height: 900px;
+    background-repeat: no-repeat;
+    width: 100%;
+    .atSmaill({
+        background-size: cover;
+        height: 1500px;
+        padding: 180px 0;
+}); 
+    .nomura__media--all{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    .atSmaill({
+        display: block;
+        width: 100%;
+}); 
+        .nomura__media--1,.nomura__media--2{
+            width: 40%;
+            background-color: #fff;
+            margin: 20px;
+            height: 450px;
+            .atSmaill({
+                width: 90%;
+        }); 
+            h4{
+                padding: 10px;
+                line-height: 25px;
+                color: @color-red;
+            }
+
+            iframe{
+                width: 100%;
+            }
+        }
+        .nomura__mesia--organizer{
+            width: 30%;
+            display: flex;
+            padding: 90px 20px;
+            margin: 30px;
+            justify-content: flex-end;
+            .atSmaill({
+                width: 150px;
+                display: block;
+                margin: 0 auto;
+                padding: 5px;
+        }); 
+            h4{
+                padding: 20px 15px;
+                width: 100px;
+                color: @color-red;
+                font-size: 1.2rem;
+                .atSmaill({
+                    padding: 20px 0;
+                    width: 150px;
+                    text-align: center;
+            });
+            }
+            .nomura__mesia--organizer1{
+                img{
+                width: 90%;
+                .atSmaill({
+                    width: 100%;
+            });
+                }
+            }
+        }
+        .nomura__media--co-organiser{
+            width: 30%;
+            display: flex;
+            padding: 90 20px;
+            margin: 30px;
+            .atSmaill({
+                width: 150px;
+                display: block;
+                margin: 0 auto;
+                padding: 5px;
+        });
+            h4{
+                padding: 20px 15px;
+                width: 100px;
+                color: @color-red;
+                font-size: 1.2rem;
+                .atSmaill({
+                    padding: 20px 0;
+                    width: 150px;
+                    text-align: center;
+            });
+            }
+            .nomura__mesia--organizer1{
+                img{
+                width: 90%;
+                margin-top: 10%;
+                .atSmaill({
+                    width: 100%;
+            });
+            }
+
+        }
+    }
+    .nomura__media--co-organiser1 {
+        img{
+        width: 50%;
+        margin-top: 25px;
+        .atSmaill({
+            width: 100%;
+            margin-top: 0px;
+    });
+        }
+    }
+}
+}
+.nomura__media--p{
+    color: @color-blue;
+    padding: 0 1rem;
+    margin-top: -20px;
+}
+.nomura__media--square{
+    text-align: center;
+    background-color: @color-red;
+    width: 260px;
+    margin: 0px auto;
+    height: 90px;
+    transform: skewX(-10deg);
+    position: relative;
+    top:10px;
+    box-shadow: 2px 4px 10px 2px rgb(119, 118, 118);
+    .atSmaill({
+        margin-top: -60px
+}); 
+}
+    h2{
+        text-align: center;
+        color: #fff;
+        font-size: 2.5rem;
+        line-height: 85px;
+        position: relative;
+        margin-top: -75px;
+    }
+//---WED---
+.atSmaill(@content){
+    @media (max-width:750px){
+        @content();
+    }
+}
+.atsmedium(@content){
+    @media(max-width:1200px) and (min-width:750px){
+        @content();
+        }
+}
+.show{
+    &::after{
+        transform:rotate(-45deg);
+        margin: -3px 0 0 0;
+    }
+    &::before{
+        transform:rotate(-45deg);
+        margin: 3px 0 0 0;
+    }
+    nav{
+        .atSmaill({
+            display: block;
+        });
+        }
+}
+.noscroll{
+    height: 100%;
+    overflow: hidden;
+}

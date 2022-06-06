@@ -1,0 +1,1123 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  position: fixed;
+  z-index: 10;
+  height: 100px;
+}
+@media (max-width: 750px) {
+  header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .nav__mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: auto;
+    padding: 0 30px;
+  }
+  header .nav__mobile__icon {
+    height: 30px;
+    width: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .nav__mobile__icon .nav__mobile__icon__middline {
+    background-color: #d70029;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 2px;
+    width: 100%;
+    z-index: 50;
+    display: block;
+  }
+  header .nav__mobile__icon .nav__mobile__icon__middline::after {
+    background-color: #d70029;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 2px;
+    width: 100%;
+    bottom: -20px;
+    content: '';
+    display: block;
+    margin: 32px 0 0 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  header .nav__mobile__icon .nav__mobile__icon__middline::before {
+    background-color: #d70029;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 2px;
+    width: 100%;
+    bottom: -26px;
+    content: '';
+    display: block;
+    margin: -11px 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  header .nav__mobile__icon .nav__mobile__icon__middline.active {
+    background-color: #fff;
+  }
+  header .nav__mobile__icon .nav__mobile__icon__middline.active::after {
+    -webkit-transform: translateY(-11px) rotate(45deg);
+            transform: translateY(-11px) rotate(45deg);
+  }
+  header .nav__mobile__icon .nav__mobile__icon__middline.active::before {
+    -webkit-transform: translateY(12px) rotate(-45deg);
+            transform: translateY(12px) rotate(-45deg);
+  }
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 750px) {
+  header nav {
+    display: none;
+  }
+  header nav.nav--active {
+    background-color: #fff;
+    position: absolute;
+    margin: 0 auto;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 100px;
+    right: 0px;
+    height: 100vh;
+    text-align: center;
+  }
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: top;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+@media (max-width: 750px) {
+  header nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-padding-start: 0px;
+            padding-inline-start: 0px;
+  }
+}
+header nav ul li {
+  padding: 0 0px;
+  list-style: none;
+  line-height: 50px;
+  padding: 30px;
+}
+@media (max-width: 750px) {
+  header nav ul li {
+    margin: 20 40px;
+  }
+}
+header nav ul li a {
+  color: #d70029;
+  text-decoration: none;
+  font-size: 1.15rem;
+  height: 40px;
+  display: inline-block;
+}
+header nav ul li a:hover {
+  border-bottom: #45748B 5px solid;
+}
+.nav__mobile__icon__clos {
+  display: none;
+}
+@media (max-width: 750px) {
+  .nav__mobile__icon__clos {
+    display: none;
+  }
+  .nav__mobile__icon__clos a {
+    color: #d70029;
+    text-decoration: none;
+  }
+}
+.line img {
+  width: 50px;
+}
+.fb img {
+  width: 50px;
+}
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.fb {
+  margin: 15px;
+}
+@media (max-width: 750px) {
+  .fb {
+    background-color: #fff;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media (max-width: 750px) {
+  .line {
+    background-color: #fff;
+    position: fixed;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 650px;
+    text-align: center;
+  }
+}
+footer {
+  text-align: center;
+  background-color: #d70029;
+  color: #fff;
+  padding: 2%;
+  line-height: 5px;
+  font-size: 1rem;
+}
+@media (max-width: 750px) {
+  footer {
+    line-height: 20px;
+    padding: 5%;
+    font-size: 0.9rem;
+  }
+}
+.nomura__illustrate {
+  background-color: #efefef;
+  text-align: center;
+  color: #5e6766;
+  line-height: 28px;
+  padding: 4% 12%;
+  font-size: 1rem;
+}
+.Nomura--red {
+  color: #d70029;
+}
+.Nomura--red1 {
+  color: #d70029;
+  line-height: 35px;
+  font-size: 1.3rem;
+}
+.nomura__banner__head {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url(image/title.png), url(image/head.jpg);
+  background-size: 100% 100%;
+  background-position: -200px top center center;
+  position: relative;
+  height: 0px;
+  padding-bottom: 60%;
+}
+@media (max-width: 750px) {
+  .nomura__banner__head {
+    width: 100%;
+    background-image: url(image/title-media.png), url(image/head-media.jpg);
+    padding-bottom: 140%;
+  }
+}
+.botton {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 27%;
+  z-index: 10;
+  width: 35px;
+  height: 184px;
+  right: 80px;
+  display: block;
+  display: none;
+}
+@media (max-width: 750px) {
+  .botton {
+    right: 30px;
+  }
+  .botton.botton--none {
+    display: none;
+  }
+  .botton img {
+    width: 120%;
+    bottom: 25%;
+  }
+}
+.sec {
+  padding: 120px 0 0 0;
+}
+.nomura__about .nomura__about--square {
+  text-align: center;
+  background-color: #d70029;
+  width: 200px;
+  margin: 0 auto;
+  height: 90px;
+  -webkit-transform: skewX(-10deg);
+          transform: skewX(-10deg);
+  -webkit-box-shadow: 2px 4px 10px 2px #777676;
+          box-shadow: 2px 4px 10px 2px #777676;
+}
+.nomura__about .nomura__about--title {
+  background-image: url(image/about.jpg);
+  background-repeat: no-repeat;
+  height: 650px;
+}
+.nomura__about .nomura__about--title h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 85px;
+  position: relative;
+  margin-top: -88px;
+  margin-bottom: 80px;
+}
+.nomura__about .nomura__about--title p {
+  text-align: center;
+  background-repeat: no-repeat;
+  color: #45748B;
+  line-height: 45px;
+  font-size: 1.7rem;
+}
+@media (max-width: 750px) {
+  .nomura__about .nomura__about--title p {
+    font-size: 1.5rem;
+  }
+}
+.nomura__host {
+  padding: 110px 0;
+  background-image: url(image/host-bg.jpg);
+  height: 800px;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+@media (max-width: 750px) {
+  .nomura__host {
+    height: 2100px;
+    padding: 110px 0;
+  }
+}
+.nomura__host .nomura__host--people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 60px auto;
+  width: 80%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.nomura__host .nomura__host--people .nomura__host--people1,
+.nomura__host .nomura__host--people .nomura__host--people2,
+.nomura__host .nomura__host--people .nomura__host--people3 {
+  margin: 0 auto;
+}
+.nomura__host .nomura__host--people .nomura__host--people1 a,
+.nomura__host .nomura__host--people .nomura__host--people2 a,
+.nomura__host .nomura__host--people .nomura__host--people3 a {
+  text-decoration: none;
+}
+.nomura__host .nomura__host--people .nomura__host--people1 a img,
+.nomura__host .nomura__host--people .nomura__host--people2 a img,
+.nomura__host .nomura__host--people .nomura__host--people3 a img {
+  width: 350px;
+}
+.nomura__host .nomura__host--people .nomura__host--people1 a img:first-child,
+.nomura__host .nomura__host--people .nomura__host--people2 a img:first-child,
+.nomura__host .nomura__host--people .nomura__host--people3 a img:first-child {
+  -webkit-box-shadow: 2px 2px 11px 2px #a1a0a0;
+          box-shadow: 2px 2px 11px 2px #a1a0a0;
+}
+.nomura__host .nomura__host--people .nomura__host--people1 .nomura__host--people1--square,
+.nomura__host .nomura__host--people .nomura__host--people2 .nomura__host--people1--square,
+.nomura__host .nomura__host--people .nomura__host--people3 .nomura__host--people1--square,
+.nomura__host .nomura__host--people .nomura__host--people1 .nomura__host--people2--square,
+.nomura__host .nomura__host--people .nomura__host--people2 .nomura__host--people2--square,
+.nomura__host .nomura__host--people .nomura__host--people3 .nomura__host--people2--square {
+  text-align: center;
+  background-color: #d70029;
+  width: 220px;
+  margin: 0 auto;
+  height: 71.5px;
+  -webkit-transform: skewX(-10deg);
+          transform: skewX(-10deg);
+  position: relative;
+  margin-top: -75px;
+}
+.nomura__host .nomura__host--people .nomura__host--people1 .nomura__host--people3--square,
+.nomura__host .nomura__host--people .nomura__host--people2 .nomura__host--people3--square,
+.nomura__host .nomura__host--people .nomura__host--people3 .nomura__host--people3--square {
+  text-align: center;
+  background-color: #d70029;
+  width: 250px;
+  margin: 0 auto;
+  height: 71px;
+  -webkit-transform: skewX(-10deg);
+          transform: skewX(-10deg);
+  position: relative;
+  margin-top: -75px;
+}
+.nomura__host .nomura__host--people .nomura__host--people1 .nomura__host--people1--host,
+.nomura__host .nomura__host--people .nomura__host--people2 .nomura__host--people1--host,
+.nomura__host .nomura__host--people .nomura__host--people3 .nomura__host--people1--host,
+.nomura__host .nomura__host--people .nomura__host--people1 .nomura__host--people2--host,
+.nomura__host .nomura__host--people .nomura__host--people2 .nomura__host--people2--host,
+.nomura__host .nomura__host--people .nomura__host--people3 .nomura__host--people2--host {
+  position: relative;
+  text-align: left;
+  line-height: 25px;
+  margin: -22% 25%;
+  color: #fff;
+}
+.nomura__host .nomura__host--people .nomura__host--people1 .nomura__host--people1--host img,
+.nomura__host .nomura__host--people .nomura__host--people2 .nomura__host--people1--host img,
+.nomura__host .nomura__host--people .nomura__host--people3 .nomura__host--people1--host img,
+.nomura__host .nomura__host--people .nomura__host--people1 .nomura__host--people2--host img,
+.nomura__host .nomura__host--people .nomura__host--people2 .nomura__host--people2--host img,
+.nomura__host .nomura__host--people .nomura__host--people3 .nomura__host--people2--host img {
+  position: relative;
+  width: 12%;
+  margin-left: 85%;
+  top: -30px;
+}
+.nomura__host .nomura__host--people .nomura__host--people1 .nomura__host--people3--host,
+.nomura__host .nomura__host--people .nomura__host--people2 .nomura__host--people3--host,
+.nomura__host .nomura__host--people .nomura__host--people3 .nomura__host--people3--host {
+  position: relative;
+  text-align: left;
+  line-height: 25px;
+  margin: -22% 21%;
+  color: #fff;
+  width: 220px;
+}
+.nomura__host .nomura__host--people .nomura__host--people1 .nomura__host--people3--host img,
+.nomura__host .nomura__host--people .nomura__host--people2 .nomura__host--people3--host img,
+.nomura__host .nomura__host--people .nomura__host--people3 .nomura__host--people3--host img {
+  position: relative;
+  width: 10%;
+  margin-left: 85%;
+  top: -30px;
+}
+.nomura__host .nomura__host--people .nomura__host--people1 .nomura__host--menu1,
+.nomura__host .nomura__host--people .nomura__host--people2 .nomura__host--menu1,
+.nomura__host .nomura__host--people .nomura__host--people3 .nomura__host--menu1 {
+  background-color: #94D3DD;
+  margin: 45px 0;
+  width: 351px;
+  height: 140px;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 1.1rem;
+}
+.nomura__host .nomura__host--people .nomura__host--people1 .nomura__host--menu1 ul,
+.nomura__host .nomura__host--people .nomura__host--people2 .nomura__host--menu1 ul,
+.nomura__host .nomura__host--people .nomura__host--people3 .nomura__host--menu1 ul {
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+.nomura__host .nomura__host--people .nomura__host--people1 .nomura__host--menu1 ul li,
+.nomura__host .nomura__host--people .nomura__host--people2 .nomura__host--menu1 ul li,
+.nomura__host .nomura__host--people .nomura__host--people3 .nomura__host--menu1 ul li {
+  color: #45748B;
+}
+.nomura__host .nomura__host--people .nomura__host--people1 .Nomura__host--menu2,
+.nomura__host .nomura__host--people .nomura__host--people2 .Nomura__host--menu2,
+.nomura__host .nomura__host--people .nomura__host--people3 .Nomura__host--menu2 {
+  background-color: #94D3DD;
+  margin: 45px 0;
+  width: 351px;
+  height: 140px;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 1.1rem;
+}
+.nomura__host .nomura__host--people .nomura__host--people1 .Nomura__host--menu2 ul,
+.nomura__host .nomura__host--people .nomura__host--people2 .Nomura__host--menu2 ul,
+.nomura__host .nomura__host--people .nomura__host--people3 .Nomura__host--menu2 ul {
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+.nomura__host .nomura__host--people .nomura__host--people1 .Nomura__host--menu2 ul li,
+.nomura__host .nomura__host--people .nomura__host--people2 .Nomura__host--menu2 ul li,
+.nomura__host .nomura__host--people .nomura__host--people3 .Nomura__host--menu2 ul li {
+  color: #45748B;
+}
+.nomura__host .nomura__host--people .nomura__host--people1 .nomura__host--menu3,
+.nomura__host .nomura__host--people .nomura__host--people2 .nomura__host--menu3,
+.nomura__host .nomura__host--people .nomura__host--people3 .nomura__host--menu3 {
+  background-color: #94D3DD;
+  margin: 45px 0;
+  width: 351px;
+  height: 160px;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 1.1rem;
+}
+.nomura__host .nomura__host--people .nomura__host--people1 .nomura__host--menu3 ul,
+.nomura__host .nomura__host--people .nomura__host--people2 .nomura__host--menu3 ul,
+.nomura__host .nomura__host--people .nomura__host--people3 .nomura__host--menu3 ul {
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+.nomura__host .nomura__host--people .nomura__host--people1 .nomura__host--menu3 ul li,
+.nomura__host .nomura__host--people .nomura__host--people2 .nomura__host--menu3 ul li,
+.nomura__host .nomura__host--people .nomura__host--people3 .nomura__host--menu3 ul li {
+  color: #45748B;
+}
+.nomura__host .nomura__host--people .nomura__host--people1 .name,
+.nomura__host .nomura__host--people .nomura__host--people2 .name,
+.nomura__host .nomura__host--people .nomura__host--people3 .name {
+  font-size: 1.3rem;
+}
+.nomura__host .nomura__host--people .nomura__host--people1 .nomura__host--menu,
+.nomura__host .nomura__host--people .nomura__host--people2 .nomura__host--menu,
+.nomura__host .nomura__host--people .nomura__host--people3 .nomura__host--menu {
+  width: 350px;
+}
+.nomura__host .nomura__host--square {
+  text-align: center;
+  background-color: #d70029;
+  width: 260px;
+  margin: 0px auto;
+  height: 90px;
+  -webkit-transform: skewX(-10deg);
+          transform: skewX(-10deg);
+  position: relative;
+  top: 20px;
+  -webkit-box-shadow: 2px 4px 10px 2px #777676;
+          box-shadow: 2px 4px 10px 2px #777676;
+}
+.nomura__host .nomura__host--title h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 85px;
+  position: relative;
+  margin-top: -65px;
+}
+.nomura__agenda {
+  background-image: url(image/time.jpg);
+  height: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100 0px;
+  background-repeat: no-repeat;
+}
+@media (max-width: 750px) {
+  .nomura__agenda {
+    height: 1230px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.nomura__agenda .nomura__agenda--white {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 80%;
+  height: 1100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 750px) {
+  .nomura__agenda .nomura__agenda--white {
+    height: 1300px;
+  }
+}
+.nomura__agenda .nomura__agenda--white .nomura__agenda--time,
+.nomura__agenda .nomura__agenda--white .nomura__agenda--agenda,
+.nomura__agenda .nomura__agenda--white .nomura__agenda--host {
+  text-align: center;
+  width: 315px;
+}
+.nomura__agenda .nomura__agenda--white .nomura__agenda--time--all {
+  padding: 0 100px;
+}
+@media (max-width: 750px) {
+  .nomura__agenda .nomura__agenda--white .nomura__agenda--time--all {
+    padding: 0 40px;
+  }
+}
+.nomura__agenda .nomura__agenda--white .nomura__agenda--time2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  margin: 80px auto 0;
+}
+@media (max-width: 750px) {
+  .nomura__agenda .nomura__agenda--white .nomura__agenda--time2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.nomura__agenda .nomura__agenda--white .nomura__agenda--time2 img {
+  width: 40%;
+  height: 27%;
+}
+@media (max-width: 750px) {
+  .nomura__agenda .nomura__agenda--white .nomura__agenda--time2 img {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+.nomura__agenda .nomura__agenda--white .nomura__agenda--time2 p {
+  font-size: 2.5rem;
+  margin: 0  40 0px;
+  color: #45748B;
+}
+@media (max-width: 750px) {
+  .nomura__agenda .nomura__agenda--white .nomura__agenda--time2 p {
+    width: 100%;
+    text-align: center;
+    margin: 30px  auto;
+    font-size: 1.8rem;
+  }
+}
+.nomura__agenda .nomura__agenda--square {
+  text-align: center;
+  background-color: #d70029;
+  width: 260px;
+  margin: 0px auto;
+  height: 90px;
+  -webkit-transform: skewX(-10deg);
+          transform: skewX(-10deg);
+  position: relative;
+  top: 80px;
+  -webkit-box-shadow: 2px 4px 10px 2px #777676;
+          box-shadow: 2px 4px 10px 2px #777676;
+}
+.nomura__agenda h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 85px;
+  position: relative;
+  margin-top: -5px;
+}
+.nomura__agenda__wire,
+.nomura__agenda__wire--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  border-top: #231815 1px double;
+  margin: 0 auto;
+  line-height: 25px;
+  font-size: 1.2rem;
+  padding: 25px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media (max-width: 750px) {
+  .nomura__agenda__wire,
+  .nomura__agenda__wire--title {
+    padding: 23px;
+  }
+}
+.nomura__agenda__wire:first-child,
+.nomura__agenda__wire--title:first-child {
+  border-top: none;
+}
+.nomura__agenda__wire li,
+.nomura__agenda__wire--title li {
+  list-style: none;
+  color: #45748B;
+}
+.nomura__agenda--title--middline {
+  display: none;
+}
+@media (max-width: 750px) {
+  .nomura__agenda__wire--title .nomura__agenda--title {
+    display: none;
+  }
+  .nomura__agenda__wire--title .nomura__agenda--title--middline {
+    display: block;
+    font-size: 1.3rem;
+    margin: 0 auto;
+  }
+}
+.nomura__agenda__wire--title {
+  font-size: 2rem;
+  width: 100%;
+}
+@media (max-width: 750px) {
+  .nomura__agenda__wire--title {
+    width: 80%;
+  }
+}
+.nomura__agenda__wire--title .nomura__agenda--title {
+  text-align: center;
+  width: 315px;
+}
+.nomura__signup {
+  background-color: #94D3DD;
+  height: 1650px;
+}
+@media (max-width: 750px) {
+  .nomura__signup {
+    height: 1700px;
+  }
+}
+.nomura__signup .nomura__signup--all {
+  background-color: #efefef;
+  width: 80%;
+  margin: 0 auto;
+  height: 1500px;
+}
+@media (max-width: 750px) {
+  .nomura__signup .nomura__signup--all {
+    width: 100%;
+    height: 1650px;
+  }
+}
+.nomura__signup .nomura__signup--all .nomura__sign.up__form {
+  margin: 0 auto;
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 750px) {
+  .nomura__signup .nomura__signup--all .nomura__sign.up__form {
+    width: 90%;
+  }
+}
+.nomura__signup .nomura__signup--all .nomura__sign.up__form input {
+  width: 80%;
+  margin: 20 auto;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  border: 0px;
+}
+@media (max-width: 750px) {
+  .nomura__signup .nomura__signup--all .nomura__sign.up__form input {
+    width: 68%;
+  }
+}
+.nomura__signup .nomura__signup--all .nomura__sign.up--checkbox,
+.nomura__signup .nomura__signup--all .nomura__sign.up--submit {
+  margin: 0 25%;
+  width: 53%;
+  display: block;
+  color: #45748B;
+}
+@media (max-width: 750px) {
+  .nomura__signup .nomura__signup--all .nomura__sign.up--checkbox,
+  .nomura__signup .nomura__signup--all .nomura__sign.up--submit {
+    margin: 0 5%;
+    width: 90%;
+  }
+}
+.nomura__signup .nomura__signup--all .nomura__sign.up--checkbox {
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.nomura__signup .nomura__signup--all .nomura__sign.up__form textarea,
+.nomura__signup .nomura__signup--all .nomura__sign.up--checkbox textarea,
+.nomura__signup .nomura__signup--all .nomura__Sign.up__form1 textarea {
+  width: 80%;
+  margin: 20 auto;
+  height: 200px;
+  border-radius: 5px;
+  border: 0px;
+  outline: none;
+}
+@media (max-width: 750px) {
+  .nomura__signup .nomura__signup--all .nomura__sign.up__form textarea,
+  .nomura__signup .nomura__signup--all .nomura__sign.up--checkbox textarea,
+  .nomura__signup .nomura__signup--all .nomura__Sign.up__form1 textarea {
+    width: 68%;
+  }
+}
+.nomura__signup .nomura__signup--all .nomura__sign.up__form label,
+.nomura__signup .nomura__signup--all .nomura__sign.up--checkbox label,
+.nomura__signup .nomura__signup--all .nomura__Sign.up__form1 label {
+  color: #45748B;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  font-size: 1.2rem;
+}
+.nomura__signup .nomura__signup--square {
+  text-align: center;
+  background-color: #d70029;
+  width: 260px;
+  margin: 0px auto;
+  height: 90px;
+  -webkit-transform: skewX(-10deg);
+          transform: skewX(-10deg);
+  position: relative;
+  top: 50px;
+  -webkit-box-shadow: 2px 4px 10px 2px #777676;
+          box-shadow: 2px 4px 10px 2px #777676;
+}
+.nomura__signup h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 200px;
+  position: relative;
+  margin-top: -100px;
+}
+.nomura__signup .nomura__sign.up--submit {
+  padding: 0 10px 40px;
+}
+.nomura__signup .nomura__sign.up--submit input {
+  margin-left: 42%;
+  padding: 10px;
+  color: #fff;
+  background-color: #d70029;
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border: 0px;
+  padding: 15px;
+}
+@media (max-width: 750px) {
+  .nomura__signup .nomura__sign.up--submit input {
+    margin-left: 35%;
+    font-size: 1rem;
+  }
+}
+.nomura__signup .nomura__sign.up--footer {
+  background-color: #99A8A7;
+  width: 53%;
+  margin: 0 auto;
+  color: #fff;
+  padding: 10 150px;
+  line-height: 25px;
+}
+@media (max-width: 750px) {
+  .nomura__signup .nomura__sign.up--footer {
+    padding: 10 5px;
+    width: 100%;
+    margin-left: -10px;
+  }
+}
+.nomura__signup .nomura__sign.up--footer ul {
+  list-style: none;
+}
+.nomura__signup .nomura__sign.up--footer .nomura__sign.up--footer--text2 {
+  padding: 0 1rem ;
+}
+@media (max-width: 750px) {
+  .nomura__signup .nomura__sign.up--footer .nomura__sign.up--footer--text2 {
+    margin-left: -10px;
+  }
+}
+.nomura__signup .nomura__sign.up--footer .nomura__sign.up--footer--text1 {
+  font-size: 1.2rem;
+}
+@media (max-width: 750px) {
+  .nomura__signup .nomura__sign.up--footer .nomura__sign.up--footer--text1 {
+    margin-left: -10px;
+  }
+}
+.nomura__Sign.up__form1 {
+  margin: 0 auto;
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media (max-width: 750px) {
+  .nomura__Sign.up__form1 {
+    width: 90%;
+  }
+}
+.nomura__Sign.up__form1 label {
+  padding: 30px 0 0 0;
+}
+@media (max-width: 750px) {
+  .nomura__Sign.up__form1 label {
+    padding: 5 0 0 0;
+  }
+}
+@media (max-width: 750px) {
+  .up__form--text label {
+    margin-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.nomura__media {
+  background-image: url(image/media.jpg);
+  height: 900px;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+@media (max-width: 750px) {
+  .nomura__media {
+    background-size: cover;
+    height: 1500px;
+    padding: 180px 0;
+  }
+}
+.nomura__media .nomura__media--all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 750px) {
+  .nomura__media .nomura__media--all {
+    display: block;
+    width: 100%;
+  }
+}
+.nomura__media .nomura__media--all .nomura__media--1,
+.nomura__media .nomura__media--all .nomura__media--2 {
+  width: 40%;
+  background-color: #fff;
+  margin: 20px;
+  height: 450px;
+}
+@media (max-width: 750px) {
+  .nomura__media .nomura__media--all .nomura__media--1,
+  .nomura__media .nomura__media--all .nomura__media--2 {
+    width: 90%;
+  }
+}
+.nomura__media .nomura__media--all .nomura__media--1 h4,
+.nomura__media .nomura__media--all .nomura__media--2 h4 {
+  padding: 10px;
+  line-height: 25px;
+  color: #d70029;
+}
+.nomura__media .nomura__media--all .nomura__media--1 iframe,
+.nomura__media .nomura__media--all .nomura__media--2 iframe {
+  width: 100%;
+}
+.nomura__media .nomura__media--all .nomura__mesia--organizer {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 90px 20px;
+  margin: 30px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+@media (max-width: 750px) {
+  .nomura__media .nomura__media--all .nomura__mesia--organizer {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+  }
+}
+.nomura__media .nomura__media--all .nomura__mesia--organizer h4 {
+  padding: 20px 15px;
+  width: 100px;
+  color: #d70029;
+  font-size: 1.2rem;
+}
+@media (max-width: 750px) {
+  .nomura__media .nomura__media--all .nomura__mesia--organizer h4 {
+    padding: 20px 0;
+    width: 150px;
+    text-align: center;
+  }
+}
+.nomura__media .nomura__media--all .nomura__mesia--organizer .nomura__mesia--organizer1 img {
+  width: 90%;
+}
+@media (max-width: 750px) {
+  .nomura__media .nomura__media--all .nomura__mesia--organizer .nomura__mesia--organizer1 img {
+    width: 100%;
+  }
+}
+.nomura__media .nomura__media--all .nomura__media--co-organiser {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 90 20px;
+  margin: 30px;
+}
+@media (max-width: 750px) {
+  .nomura__media .nomura__media--all .nomura__media--co-organiser {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+  }
+}
+.nomura__media .nomura__media--all .nomura__media--co-organiser h4 {
+  padding: 20px 15px;
+  width: 100px;
+  color: #d70029;
+  font-size: 1.2rem;
+}
+@media (max-width: 750px) {
+  .nomura__media .nomura__media--all .nomura__media--co-organiser h4 {
+    padding: 20px 0;
+    width: 150px;
+    text-align: center;
+  }
+}
+.nomura__media .nomura__media--all .nomura__media--co-organiser .nomura__mesia--organizer1 img {
+  width: 90%;
+  margin-top: 10%;
+}
+@media (max-width: 750px) {
+  .nomura__media .nomura__media--all .nomura__media--co-organiser .nomura__mesia--organizer1 img {
+    width: 100%;
+  }
+}
+.nomura__media .nomura__media--all .nomura__media--co-organiser1 img {
+  width: 50%;
+  margin-top: 25px;
+}
+@media (max-width: 750px) {
+  .nomura__media .nomura__media--all .nomura__media--co-organiser1 img {
+    width: 100%;
+    margin-top: 0px;
+  }
+}
+.nomura__media--p {
+  color: #45748B;
+  padding: 0 1rem;
+  margin-top: -20px;
+}
+.nomura__media--square {
+  text-align: center;
+  background-color: #d70029;
+  width: 260px;
+  margin: 0px auto;
+  height: 90px;
+  -webkit-transform: skewX(-10deg);
+          transform: skewX(-10deg);
+  position: relative;
+  top: 10px;
+  -webkit-box-shadow: 2px 4px 10px 2px #777676;
+          box-shadow: 2px 4px 10px 2px #777676;
+}
+@media (max-width: 750px) {
+  .nomura__media--square {
+    margin-top: -60px;
+  }
+}
+h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 85px;
+  position: relative;
+  margin-top: -75px;
+}
+.show::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin: -3px 0 0 0;
+}
+.show::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin: 3px 0 0 0;
+}
+@media (max-width: 750px) {
+  .show nav {
+    display: block;
+  }
+}
+.noscroll {
+  height: 100%;
+  overflow: hidden;
+}
